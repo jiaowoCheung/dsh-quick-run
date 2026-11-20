@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Run configurations",
+    "description": "A run-configuration widget in the Session header: pick a script, press ▶ to launch it, and watch live output in a floating panel. Configurations are discovered from npm scripts and .ps1 / .bat / .cmd / .sh files in the working directory, or pinned in .dsh-quick-run.json.",
+    "detail": "docs/DETAIL.md"
+  }
+}

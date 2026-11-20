@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "运行配置",
+    "description": "会话标题栏右侧的运行配置小部件：下拉选脚本，▶ 一键运行，浮层面板里看实时输出。配置自动取工作目录里的 npm scripts 和 .ps1 / .bat / .cmd / .sh 脚本，也可以在 .dsh-quick-run.json 里固定下来。",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "name": "dsh-quick-run",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Run configurations in the DSH conversation header: one click to launch the scripts already in your project, with live output — like VS Code / IDEA run configurations.",
+  "type": "module",
+  "license": "MIT",
+  "author": "jiaowoCheung",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiaowoCheung/dsh-quick-run.git"
+  },
+  "homepage": "https://github.com/jiaowoCheung/dsh-quick-run#readme",
+  "bugs": {
+    "url": "https://github.com/jiaowoCheung/dsh-quick-run/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "run-configuration",
+    "run",
+    "launcher",
+    "scripts",
+    "vscode",
+    "idea"
+  ],
+  "engines": {
+    "dsh": "^0.2.1-rc.1 || ^0.2.2-rc.1"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  }
+}
